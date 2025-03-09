@@ -11,8 +11,8 @@ const router = express.Router();
 
 router.get("/", getMentees);
 router.get("/:id", getMenteeById);
-router.post("/", createMentee);
-router.put("/:id", updateMentee);
-router.delete("/:id", deleteMentee);
+// router.post("/", createMentee);
+// router.put("/:id", updateMentee);
+// router.delete("/:id", deleteMentee);
 
 module.exports = router;

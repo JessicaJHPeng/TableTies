@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+            flex: 1;
+        }
+        .account-info, .friends, .project-gallery, .skills {
+            margin-bottom: 20px;
+        }
+        .account-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .account-info img {
+            width: 150px;
+            height: 150px;
+        }
+        .project-gallery {
+            display: flex;
+            gap: 10px;
+        }
+        .project-gallery img {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+        .friends {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+        .friends div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .friends img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 5px;
+            transition: transform 0.3s;
+        }
+        .friends img:hover {
+            transform: scale(1.2);
+        }
+        .social-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+        }
+        .friends div:hover .social-links {
+            display: flex;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 789px;
+            height: 121px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            background: #FFEFFC;
+        }
+        .skills .skill {
+            border-radius: 5px;
+            background: #040049;
+            width: 110px;
+            height: 36px;
+            flex-shrink: 0;
+            color: #FFEFFC;
+            text-align: center;
+            font-family: Sarala;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#home"><img src="/frontend/src/Tabletieslogo2.png" alt="TableTies Logo" style="width: 100%;"></a>
+        <a href="#workspace">Workspace</a>
+        <a href="#projects">Projects</a>
+        <a href="#browse">Browse</a>
+        <a href="#logout">Logout</a>
+    </div>
+    <!-- start of main body -->
+    <div class="content">
+        <div id="account-info" class="account-info">
+            <img src="/frontend/src/myprofile.png" alt="Your Profile Image">
+            <div>
+                <h2>Name: Lily</h2>
+                <p>Passionate about back-end development, system design, and DevOps. Proficient in Python and familiar with GitHub, with a strong foundation in building scalable systems. Especially interested in educational projects that make learning more accessible and engaging through technology. Also enthusiastic about branding and networking to create impactful digital experiences. Always learning and exploring new technologies!</p>
+            </div>
+        </div>
+        <div id="project-gallery" class="project-gallery">
+            <h2>Project Gallery</h2>
+            <img src="/frontend/src/project1.png" alt="Project 1" onclick="location.href='project1.html'">
+            <img src="/frontend/src/project2.png" alt="Project 2" onclick="location.href='project2.html'">
+        </div>
+        <div id="friends" class="friends">
+            <h2>At My Table</h2>
+            <div>
+                <img src="/frontend/src/friend1.png" alt="Friend 1">
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div>
+                <img src="/frontend/src/friend2.png" alt="Friend 2">
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">System Design</div>
+            <div class="skill">Branding</div>
+        </div>
+    </div>
+</body>
+</html>

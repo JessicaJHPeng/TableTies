@@ -5,4 +5,4 @@ const mentorSchema = new mongoose.Schema({
   field: String
 });
 
-module.exports = mongoose.model("Mentor", mentorSchema);
+module.exports = mongoose.model("mentors", mentorSchema);

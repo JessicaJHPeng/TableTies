@@ -10,4 +10,4 @@ const menteeSchema = new mongoose.Schema({
   // subPlan: none
 });
 
-module.exports = mongoose.model("mentees", menteeSchema);
+module.exports = mongoose.model("Mentee", menteeSchema);

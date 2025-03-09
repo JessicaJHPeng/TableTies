@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from "./Tabletieslogo2.png"
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
             </div>
         </div>
     </div>
-    <img style={{width: 366, height: 370, left: 110, top: 246, position: 'absolute', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}} src="https://placehold.co/366x370" />
+    <img style={{width: 366, height: 370, left: 110, top: 246, position: 'absolute', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}} src={logo} />
 </div>
   );
 }
